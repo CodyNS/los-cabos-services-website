@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Contact Us - Los Cabos Massage</title>
+</head>
+<body>
+
+  
+  <div class="topbar" style="border-bottom: 1px solid #888">
+    <a href="/"><div class="top-branding"><img src="/pics/logo-neg.png" class="toplogo"/><span class="brandtext">Los Cabos Massage</span></div></a>
+    <div class="navbar">
+      <a href="/about" style="padding-left: 20px">About</a>
+      <div class="dropdown">
+        <button class="dropbtn">Services 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/catering">Catering</a>
+          <a href="/shuttle">Shuttle</a>
+          <a href="/yoga">Yoga</a>
+          <a href="/massage">Massage</a>
+          <a href="/nanny">Nanny</a>
+        </div>
+      </div> 
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+
+
+  <div class="main" style="min-height: calc(100vh - 101px); background: rgba(0,0,0,0.05)">
+
+    <div class="section-outer"><div class="section-inner">
+      <div class="title">Contact Us</div>
+      <div class="main-blurb" style="margin-bottom: 40px; font-size: 1.2em">
+        <div style="margin-bottom: 10px"><b><u>Phone:</u></b></div>
+        624-175-1580 (local)<br>
+        +52-624-175-1580 (USA)<br><br>
+        <b>or use the form below</b> and we will contact you ASAP:
+      </div>
+
+
+      <div class="fcf-body" style="margin: 40px auto 0; background: rgba(0,0,0,0.05)">
+        <div id="fcf-form">
+          <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+
+            <div class="fcf-form-group">
+              <label for="Name" class="fcf-label">Your name</label>
+              <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+              </div>
+            </div>
+      
+            <div class="fcf-form-group">
+              <label for="Email" class="fcf-label">Your email address</label>
+              <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+              </div>
+            </div>
+
+            <div class="fcf-form-group">
+              <label for="Message" class="fcf-label">Your message</label>
+              <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+              </div>
+            </div>
+      
+            <div class="fcf-form-group">
+              <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+
+ 
+    </div></div>
+
+    
+
+  </div> <!-- /main -->
+
+  <div class="footer"></div>
+
+  <script src="/code.js"></script>
+  
+</body>
+</html>

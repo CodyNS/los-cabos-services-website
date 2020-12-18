@@ -1,0 +1,358 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    background: #eae7d9;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+.topbar {
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+}
+.top-branding {
+    float: left;
+    background: rgba(0, 0, 0, 0.07);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.topbar img {
+    float: left;
+    height: 36px;
+    margin: 0 12px 0 -10px;
+    padding: 7px 0;
+}
+a .top-branding {
+    text-decoration: none;
+    color: black !important
+}
+.top-branding:hover {
+    color: #FFF !important;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* navbar */
+.navbar {
+    float: left;
+    overflow: hidden;
+}
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 0 16px;
+    text-decoration: none;
+    color: #000;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: inherit;  
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(0,0,0,0.3);
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 0 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: rgba;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+@media (max-width: 530px) {
+    .brandtext {
+        display: none;
+    }
+    .topbar img {
+        margin: 0;
+    }
+    .top-branding {
+        background: rgba(0, 0, 0, 0.07);
+        padding: 0 13px;
+    }
+} 
+@media (max-width: 350px) {
+    .navbar a {
+        padding: 0 8px;
+    }
+}    
+
+
+
+.slider {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 50vw;
+    border-bottom: 1px solid rgb(141, 133, 99);
+    overflow: hidden;
+}
+.slider-overlay {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    z-index: 1;
+    line-height: 50vw;
+
+}
+.slidePic {
+    display: none;
+    width: 100%;
+}
+.anifade {
+    animation: fading 6s infinite
+}@keyframes fading {
+    0%{opacity:0}
+    33%{opacity:1}
+    100%{opacity:1}
+}
+
+
+
+
+.main {
+    text-align: center;
+    position: relative;
+    min-height: calc((100vh - 50vw) - 101px);
+}
+.section-outer, .section-outer2 {
+    width: 100%;
+}
+.section-outer2 {
+    background: rgba(0,0,0,0.05);
+}
+.section-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 30px;   
+}
+.title {
+    color: rgb(44, 33, 33);
+    margin-top: -10px;
+    padding: 0 0 30px;
+    font-weight: 400;
+    font-size: 40px;
+}
+@media (max-width: 460px) {
+    .title {
+        font-size: 30px;
+    }
+}  
+@media (max-width: 370px) {
+    .title {
+        font-size: 26px;
+    }
+}  
+/* .main-blurb {
+
+} */
+.sub-head {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.services {
+    margin: 0 -10px;
+    display: flex;
+    flex-direction: row;
+}
+.service {
+    flex: 1;
+}
+.service a {
+    text-decoration: none;
+    color: #000;
+}
+.service a p:hover {
+    text-decoration: underline;
+}
+
+.box {
+    height: 150px;
+    border: 1px solid rgb(33, 37, 44);
+    margin: 10px;
+    background: rgb(66, 59, 51);
+    line-height: 150px;
+    font-size: 1.3em;
+    color: #ebc858;
+}
+.box:hover {
+    background: rgb(83, 75, 64);
+}
+.box a:hover {
+    text-decoration: none !important;
+}
+.box img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.footer {
+    height: 50px;
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 50px;
+    color: white;
+}
+.footer::after {
+    content: "\00A9  Los Cabos Massage, 2020";
+}
+
+
+
+
+
+
+
+/* contact form */
+/* so much bloat; refactor if you keep this */
+/* from https://www.freecontactform.com/form-guides/html-email-form */
+.fcf-body {
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    padding: 30px;
+    padding-bottom: 10px;
+    border-radius: 0.25rem;
+    max-width: 446px;
+    margin: -40px auto 0;
+}
+.fcf-form-group {
+    margin-bottom: 1rem;
+}
+.fcf-input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+.fcf-form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    outline: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.fcf-form-control:focus {
+    border: 1px solid #313131;
+}
+select.fcf-form-control[size], select.fcf-form-control[multiple] {
+    height: auto;
+}
+textarea.fcf-form-control {
+    font-family: -apple-system, Arial, sans-serif;
+    height: auto;
+}
+label.fcf-label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+.fcf-btn {
+    margin-top: 25px;
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+    .fcf-btn {
+        transition: none;
+    }
+}
+.fcf-btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+.fcf-btn:focus, .fcf-btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.fcf-btn-primary {
+    color: #fff;
+    background-color: #a1b7a3 ;
+    border-color: #889b89;
+}
+.fcf-btn-primary:hover {
+    color: #fff;
+    background-color: #b4ceb7;
+    border-color: #a1b7a3;
+}
+.fcf-btn-primary:focus, .fcf-btn-primary.focus {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+.fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+.fcf-btn-block {
+    display: block;
+    width: 100%;
+}
+.fcf-btn-block+.fcf-btn-block {
+    margin-top: 0.5rem;
+}
+input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
+    width: 100%;
+}
+
+

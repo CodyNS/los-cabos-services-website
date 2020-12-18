@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Los Cabos Massage</title>
+</head>
+<body>
+
+  <div class="topbar">
+    <a href="/"><div class="top-branding"><img src="/pics/logo-neg.png" class="toplogo"/><span class="brandtext">Los Cabos Massage</span></div></a>
+    <div class="navbar">
+      <a href="/about" style="padding-left: 20px">About</a>
+      <div class="dropdown">
+        <button class="dropbtn">Services 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/catering">Catering</a>
+          <a href="/shuttle">Shuttle</a>
+          <a href="/yoga">Yoga</a>
+          <a href="/massage">Massage</a>
+          <a href="/nanny">Nanny</a>
+        </div>
+      </div> 
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+
+
+  <div class="slider">
+    <img class="slidePic anifade" src="pics/good/0.jpg">
+    <img class="slidePic anifade" src="pics/good/1.jpg">
+  </div>
+
+
+  <div class="main">
+
+    <div class="section-outer"><div class="section-inner">
+      <div class="title">Los Cabos Massage</div>
+      <div class="main-blurb">
+        Welcome to Los Cabos Massage. Want something special?--no problem. We've got you covered. You like masssAAAaaage? Need to unwind with some yoga? Do you need someone to take care of your little brats? Are you looking for world-class catering? Do you need a shuttle service? All of the above? Great! Taking care of your needs is our business. Contact us today!
+      </div>
+    </div></div>
+
+
+    <div class="section-outer2"><div class="section-inner">
+      <div class="sub-head">Services Offered</div>
+      <div class="services">
+        <div class="service"><a href="/catering"><p>Catering</p><div class="box">pic</div></a></div>
+        <div class="service"><a href="/shuttle"><p>Shuttle</p><div class="box">pic</div></a></div>
+        <div class="service"><a href="/yoga"><p>Yoga</p><div class="box">pic</div></a></div>
+        <div class="service"><a href="/massage"><p>Massage</p><div class="box">pic</div></a></div>
+        <div class="service"><a href="/nanny"><p>Nanny</p><div class="box">pic</div></a></div>
+      </div>
+    </div></div>
+
+
+    <div class="section-outer" style="margin-bottom: 20px"><div class="section-inner">
+      <div class="sub-head">Contact Us</div>
+
+      <div class="fcf-body">
+        <div id="fcf-form">
+          <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+
+            <div class="fcf-form-group">
+              <label for="Name" class="fcf-label">Your name</label>
+              <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+              </div>
+            </div>
+      
+            <div class="fcf-form-group">
+              <label for="Email" class="fcf-label">Your email address</label>
+              <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+              </div>
+            </div>
+
+            <div class="fcf-form-group">
+              <label for="Message" class="fcf-label">Your message</label>
+              <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+              </div>
+            </div>
+      
+            <div class="fcf-form-group">
+              <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </div></div>
+
+  </div> <!-- /main -->
+
+  <div class="footer"></div>
+
+  <script src="code.js"></script>
+  
+</body>
+</html>
