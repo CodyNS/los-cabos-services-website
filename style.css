@@ -6,7 +6,9 @@ html {
     background: #eae7d9;
     font-family: 'Quicksand', sans-serif;
 }
-
+a:visited {
+  color:rgba(0, 0, 0, 0.5)
+}
 
 
 .topbar {
@@ -61,12 +63,14 @@ a .top-branding {
     margin: 0;
 }
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
 }
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #eae7d9;
+    border-radius: 0 0 10px 10px;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 2;
@@ -78,6 +82,9 @@ a .top-branding {
     text-decoration: none;
     display: block;
     text-align: left;
+}
+.dropdown-content a:last-child {
+  border-radius: 0 0 10px 10px;
 }
 .dropdown-content a:hover {
     background-color: rgba;
@@ -138,15 +145,18 @@ a .top-branding {
 
 
 
-.main {
+.main, .main-nanny {
     text-align: center;
     position: relative;
     min-height: calc((100vh - 50vw) - 101px);
 }
+.main-nanny b {
+  font-weight: 600;
+}
 .section {
     padding: 40px max(30px, calc(50% - 400px));
 }
-.section:nth-child(2) {
+.section:nth-child(even) {
     background: rgba(0,0,0,0.05);
 }
 .title {
@@ -173,25 +183,29 @@ h3 {
     padding-bottom: 5px;
 }
 table {
-    margin: 0 auto 20px;
+    margin: 0 auto;
 }
-.flexy {
-    display: flex;
-}
-.f1 {
-    flex: 40;
+.c1 {
     text-align: right;
     padding-right: 20px;
     font-weight: bold;
 }
-.f2 {
-    flex: 30;
+.c2 {
     text-align: left;
     padding-right: 10px;
 }
-.f3 {
-    flex: 30;
+.c3 {
     text-align: left;
+}
+.service-desc {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  max-width: 470px;
+  margin: 0 auto;
+  text-align: justify;
+}
+.price {
+  font-weight: 500;
 }
 /* .main-blurb {
 
@@ -203,7 +217,6 @@ table {
 .services {
     margin: 0 -10px;
     display: flex;
-    flex-direction: row;
 }
 .service {
     flex: 1;
