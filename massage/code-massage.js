@@ -4,7 +4,7 @@ const n = pics.length;
 let index = 0;
 
 function carousel() {
-  bg.style.backgroundImage = 'url("/pics/good/' + (index == 0 ? 0 : index-1) + '.jpg")';
+  bg.style.backgroundImage = 'url("/pics/massage/' + (index == 0 ? 0 : index-1) + '.jpg")';
   for (let i = 0; i < n; i++) pics[i].style.display = "none";  
   index++;
   if (index > n) index = 1;
