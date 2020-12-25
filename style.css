@@ -36,18 +36,27 @@ a .top-branding {
     color: #FFF !important;
     background: rgba(0, 0, 0, 0.5);
 }
-
-/* navbar */
+/* -------- navbar --------- */
 .navbar {
     float: left;
     overflow: hidden;
 }
-.navbar a {
+.navbar a, a.bookBtn {
     float: left;
     text-align: center;
+    height: 50px;
     padding: 0 16px;
     text-decoration: none;
     color: #000;
+}
+a.bookBtn {
+  float: right;
+  padding: 0 25px;
+  background: rgba(19, 185, 172, 0.9);
+  color: white;
+}
+a.bookBtn:hover {
+  background: rgb(15, 15, 15);
 }
 .dropdown {
     float: left;
@@ -57,6 +66,7 @@ a .top-branding {
     font-size: inherit;  
     border: none;
     outline: none;
+    height: 50px;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -113,10 +123,11 @@ a .top-branding {
 
 
 .slider {
+  width: 100%;
     position: relative;
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 50vw;
+    height: calc(50vw - 11px);
     border-bottom: 1px solid rgb(141, 133, 99);
     overflow: hidden;
 }
@@ -141,17 +152,26 @@ a .top-branding {
     33%{opacity:1}
     100%{opacity:1}
 }
-
+.anifadeNanny {
+  animation: fading 7s infinite
+}@keyframes fading {
+  0%{opacity:0}
+  33%{opacity:1}
+  100%{opacity:1}
+}
 
 
 
 .main, .main-nanny {
     text-align: center;
     position: relative;
-    min-height: calc((100vh - 50vw) - 101px);
+    min-height: calc((100vh - 50vw) - 90px);
 }
 .main-nanny b {
   font-weight: 600;
+}
+.main-about a:hover {
+  font-weight: bold;
 }
 .section {
     padding: 40px max(30px, calc(50% - 400px));
@@ -259,41 +279,33 @@ table {
 .price {
   font-weight: 500;
 }
-/* .main-blurb {
-
-} */
 .sub-head {
     font-size: 32px;
     margin-bottom: 30px;
 }
 .services {
-    margin: 0 -10px;
+    xxxmargin: 0 -10px;
     display: flex;
 }
 .service {
     flex: 1;
+    margin: 0 2px;
+}
+.service:hover {
+  text-decoration: underline;
+}
+.service img:hover {
+  box-shadow: 5px 10px 18px #888888;
 }
 .service a {
     text-decoration: none;
     color: #000;
 }
-.service a p:hover {
-    text-decoration: underline;
-}
 .box {
-    height: 150px;
-    border: 1px solid rgb(33, 37, 44);
-    margin: 10px;
-    background: rgb(66, 59, 51);
-    line-height: 150px;
-    font-size: 1.3em;
-    color: #ebc858;
+    margin: 10px 0 !important;
 }
 .box:hover {
-    background: rgb(83, 75, 64);
-}
-.box a:hover {
-    text-decoration: none !important;
+    filter: brightness(1.2);
 }
 .box img {
     width: 100%;

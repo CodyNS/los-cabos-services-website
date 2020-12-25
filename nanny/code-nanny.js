@@ -9,7 +9,7 @@ function carousel() {
   index++;
   if (index > n) index = 1;
   pics[index-1].style.display = "block";  
-  setTimeout(carousel, 5000);    
+  setTimeout(carousel, 6000);    
 } 
 if (bg)  carousel();
 
