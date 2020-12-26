@@ -12,11 +12,3 @@ function carousel() {
   setTimeout(carousel, 6000);    
 } 
 if (bg)  carousel();
-
-
-document.querySelector(".top-branding").addEventListener("mouseover", function() {
-    document.querySelector(".toplogo").src="/pics/logo.png";
-});
-document.querySelector(".top-branding").addEventListener("mouseout", function() {
-    document.querySelector(".toplogo").src="/pics/logo-neg.png";
-});

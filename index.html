@@ -34,9 +34,8 @@
     </a>
 
     <a class="bookBtn" href="/contact">Book Now</a>
-    
+  
   </div>
-
   <div id="hambMenu">
     <a href="/about">About</a>
     <a href="/contact">Contact</a>
@@ -80,17 +79,17 @@
     </div>
 
 
-    <div class="section" style="margin-bottom: 20px">
+    <div class="section homePageContactUs" style="margin-bottom: 20px">
       <div class="sub-head mainPageContactUsHeading">Contact Us</div>
 
       <div class="fcf-body">
         <div id="fcf-form">
-          <form id="fcf-form-id" class="fcf-form-class" method="post" action="/contact-form-process.php">
+          <form id="fcf-form-id" class="fcf-form-class" method="post" autocomplete="false" action="/contact-form-process.php">
 
             <div class="fcf-form-group">
               <label for="Name" class="fcf-label">Your name</label>
               <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                <input type="text" id="Name" name="Name" class="fcf-form-control" autocomplete="new" required>
               </div>
             </div>
       
@@ -122,6 +121,7 @@
 
   <div class="footer"></div>
 
+  <script src="code-common.js"></script>
   <script src="code-home.js"></script>
   
 </body>

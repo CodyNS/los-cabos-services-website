@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style.css"/>
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Yoga - Cabo Concierge</title>
 </head>
@@ -16,7 +17,7 @@
       <a href="/about" style="padding-left: 20px">About</a>
       <div class="dropdown">
         <button class="dropbtn">Services 
-          <i class="fa fa-caret-down"></i>
+          <!-- <i class="fa fa-caret-down"></i> -->
         </button>
         <div class="dropdown-content">
           <a href="/private-chef">Private Chef</a>
@@ -27,7 +28,23 @@
       </div> 
       <a href="/contact">Contact</a>
     </div>
+
+    <a href="javascript:void(0);" class="hambBtn" onclick="openHamburger()">
+      <i class="fa fa-bars"></i>
+    </a>
+
     <a class="bookBtn" href="/contact">Book Now</a>
+  
+  </div>
+  <div id="hambMenu">
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+    <a href="/contact" class="hambBookBtn">Book Now</a>
+    <div class="services-hamb-heading">Services:</div>
+    <a href="/private-chef" class="hambService">Private Chef</a>
+    <a href="/massage" class="hambService">Massage / Spa</a>
+    <a href="/yoga" class="hambService">Yoga</a>
+    <a href="/nanny" class="hambService">Nanny</a>
   </div>
 
 
@@ -60,7 +77,8 @@
   </div> <!-- /main -->
 
   <div class="footer"></div>
-
+  
+  <script src="/code-common.js"></script>
   <script src="./code-yoga.js"></script>
   
 </body>

@@ -124,6 +124,12 @@ a.bookBtn:hover {
     text-decoration: none;
     display: block;
 }
+#hambMenu a:first-child {
+    padding-top: 20px;
+}
+#hambMenu a:last-child {
+    padding-bottom: 20px;
+}
 .topbar a.hambBtn:hover {
     background: #272727;
 }
@@ -296,11 +302,16 @@ table {
 .specials h3{
   margin-bottom: 5px;
 }
+.specials img {
+    max-width: 100%;
+    border: 4px solid white;
+    border-radius: 10px;
+}
 .special {
   background: rgba(255,255,255,0.4);
   padding: 25px;
   max-width: 655px;
-  margin: 0 auto;
+  margin: 30px auto 0;
   border-radius: 10px;
 }
 .spBox {
@@ -376,7 +387,10 @@ table {
     width: 100%;
     height: 100%;
 }
-
+.section.contactUs .fcf-body {
+    background: rgba(0,0,0,0.06);
+    margin: 0 auto 30px; 
+}
 
 
 
@@ -524,6 +538,12 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 
 
 
+@media (max-width: 625px) {
+    .chef-table td {
+        padding-bottom: 15px;
+    }
+}
+
 @media (max-width: 580px) {
     .section {
         padding: 30px 25px;
@@ -550,15 +570,13 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     }
 }
 
-
 @media (max-width: 460px) {
     .title {
         font-size: 30px;
-        padding: 0 0 15px;
+        padding: 0 0 25px;
     }
     .sub-head {
         font-size: 24px;
-
     }
     .section {
         padding: 25px 20px;
@@ -577,12 +595,39 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     .mainPageContactUsHeading {
         margin-bottom: 55px;
     }
-    .fcf-body {
+    .homePageContactUs .fcf-body {
         padding: 0;
     }
+} 
 
-}  
+@media (max-width: 440px) {
+    .massageTreatmentMenu td {
+        padding-bottom: 15px;
+    }
+    .section.specials {
+        padding: 25px 0px !important;
+    }
+    .specials img {
+        max-width: 100%;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+    }
+    .special {
+        margin-top: 15px; 
+        border-radius: 0;
+    }
+    .section.contactUs .fcf-body {
+        margin: -15px -20px 0;
+        border-radius: 0;
+    }
+}
 
+@media (max-width: 400px) {
+    .chef-table th, .chef-table td {
+        padding-right: 15px;
+      }
+}
 
 @media (max-width: 370px) {
     .title {
@@ -591,11 +636,41 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     .mainPageServicesOffered {
         margin-bottom: 0;
     }
+    .maniPediMenu td {
+        padding-bottom: 15px;
+    }
+    .chef-table th, .chef-table td{
+        padding-right: 10px;
+      }
 }
 
+@media (max-width: 350px) {
+    .chef-table th, .chef-table td{
+        padding-right: 8px;
+      }
+}
+
+@media (max-width: 340px) {
+    .section.massageTreatmentMenu {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    .chef-table th:first-child, .chef-table td:first-child{
+        padding-right: 20px;
+      }
+}
 
 @media (max-width: 330px) {
     .mainPageContactUsHeading {
         margin-bottom: 60px;
     }
+    .chef-table th:first-child, .chef-table td:first-child{
+        padding-right: 10px;
+      }
+}
+
+@media (max-width: 318px) {
+    .chef-table th, .chef-table td{
+        padding-right: 6px;
+      }
 }

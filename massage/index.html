@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style.css"/>
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Massage / Spa Services - Cabo Concierge</title>
 </head>
@@ -15,7 +16,8 @@
     <div class="navbar">
       <a href="/about" style="padding-left: 20px">About</a>
       <div class="dropdown">
-        <button class="dropbtn">Services <i class='fa fa-caret-down'></i>
+        <button class="dropbtn">Services 
+          <!-- <i class="fa fa-caret-down"></i> -->
         </button>
         <div class="dropdown-content">
           <a href="/private-chef">Private Chef</a>
@@ -26,7 +28,23 @@
       </div> 
       <a href="/contact">Contact</a>
     </div>
+
+    <a href="javascript:void(0);" class="hambBtn" onclick="openHamburger()">
+      <i class="fa fa-bars"></i>
+    </a>
+
     <a class="bookBtn" href="/contact">Book Now</a>
+  
+  </div>
+  <div id="hambMenu">
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+    <a href="/contact" class="hambBookBtn">Book Now</a>
+    <div class="services-hamb-heading">Services:</div>
+    <a href="/private-chef" class="hambService">Private Chef</a>
+    <a href="/massage" class="hambService">Massage / Spa</a>
+    <a href="/yoga" class="hambService">Yoga</a>
+    <a href="/nanny" class="hambService">Nanny</a>
   </div>
 
 
@@ -48,7 +66,7 @@
       </div>
     </div>
 
-    <div class="section" style="padding-top: 30px">
+    <div class="section massageTreatmentMenu" style="padding-top: 30px">
       <i>(all prices USD)</i><br><br>
       <h2>Massage Treatment Menu</h2>
       <table>
@@ -61,7 +79,7 @@
       </table>
     </div>
 
-    <div class="section">
+    <div class="section maniPediMenu">
       <h2>Signature Manicure/Pedicure Spa</h2>
       <i>1 hour 30 minutes</i><br><br>
       <div class="flexy" style="max-width: 420px; margin: 0 auto;">
@@ -104,9 +122,9 @@
     </div>
 
     <div class="section specials" style="padding: 40px 30px">
-      <h2>Specials / Combos</h2> 
+      <h2>Specials / Combos</h2>
 
-      <img src="/pics/massage/combo-and-sample-trio-pic.jpg" style="border: 4px solid white; border-radius: 10px"/><br><br><br>
+      <img src="/pics/massage/combo-and-sample-trio-pic.jpg" />
 
       <div class="special">
         <h3>Duo Combo Uplifting Facial + Massage</h3>
@@ -115,7 +133,7 @@
         <div class="spBox"><div class="spSrvc">Uplifting Facial</div>60 min</div>
         <div class="spBox spMath">=</div>
         <div class="spBox"><div class="spPrice">$195</div>reg. $225</div>
-      </div><br><br>
+      </div>
 
       <div class="special" style="max-width: 655px;">
         <h3>Trio Sampler</h3>
@@ -134,7 +152,8 @@
   </div> <!-- /main -->
 
   <div class="footer"></div>
-
+  
+  <script src="/code-common.js"></script>
   <script src="./code-massage.js"></script>
   
 </body>
