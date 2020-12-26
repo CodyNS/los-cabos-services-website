@@ -3,7 +3,7 @@ if (isset($_POST['Email'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "contact@codyns.com";
-    $email_subject = "contact form submission";
+    $email_subject = "contact form submission from Cabo Concierge website";
 
     function problem($error)
     {
