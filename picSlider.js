@@ -10,17 +10,17 @@ let thisScript = scripts[scripts.length-1];
 let dir = thisScript.dataset.page;
 
 function getPics() {
-  if (windowWidth < 600) {
-    usingBigPics = false;
-    return document.querySelectorAll(".slidePicSm");
-  } else {
+  if (windowWidth > 600) {
     usingBigPics = true;
     return document.querySelectorAll(".slidePic");
+  } else {
+    usingBigPics = false;
+    return document.querySelectorAll(".slidePicSm");
   }  
 }
 
 function carousel() {
-  bg.style.backgroundImage = windowWidth >= 600 ?
+  bg.style.backgroundImage = windowWidth > 600 ?
                               'url("/pics/' + dir + '/' + (index == 0 ? 0 : index-1) + '.jpg")' :
                               'url("/pics/' + dir + '/' + (index == 0 ? 0 : index-1) + 's.jpg")';
   for (let i = 0; i < n; i++)  pics[i].style.display = "none";
@@ -38,6 +38,6 @@ if (bg)  carousel();
 
 window.onresize = () => {
   windowWidth = window.innerWidth;
-  if ((!usingBigPics && windowWidth >= 600) || (usingBigPics && windowWidth < 600))
+  if ((!usingBigPics && windowWidth > 600) || (usingBigPics && windowWidth < 601))
     crossedOver = true;
 };
