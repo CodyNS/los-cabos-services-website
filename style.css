@@ -251,9 +251,6 @@ a.bookBtn:hover {
 .section:nth-child(even) {
     background: rgba(0,0,0,0.05);
 }
-.section:last-child {
-    padding-bottom: 60px;
-}
 .title {
     color: rgb(44, 33, 33);
     font-size: 40px;
@@ -581,7 +578,10 @@ input[type="submit"].fcf-btn-block{
         font-size: 24px;
     }
     .section {
-        padding: 25px 20px;
+        padding: 25px 20px 30px;
+    }
+    .section:last-child {
+        padding-bottom: 60px;
     }
     .mainPageServicesOffered {
         padding-bottom: 0px !important;
@@ -598,7 +598,7 @@ input[type="submit"].fcf-btn-block{
         margin-bottom: 55px;
     }
     .section.contactUs {
-      padding-top: 35px;
+        padding-top: 35px;
     }
     .homePageContactUs .fcf-body {
         padding: 0;
