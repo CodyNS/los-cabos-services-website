@@ -141,7 +141,6 @@ a.bookBtn:hover {
     color: white;
 }
 .services-hamb-heading {
-    xxxbackground: #191919;
     color: rgb(151, 151, 151);
 }
 #hambMenu a.hambBookBtn {
@@ -154,7 +153,6 @@ a.bookBtn:hover {
 #hambMenu a.hambService {
     padding-left: 32px;
 }
-
 
 /* hide desktop navbar, show hamburger */
 @media (max-width: 640px) {
@@ -186,15 +184,6 @@ a.bookBtn:hover {
     .hambBtn i {
         color: black;
     }
-    xxx.brandtext {
-        display: none;
-    }
-    xxxx.topbar img {
-        margin: 0;
-    }
-    xxx.top-branding {
-        padding: 0 13px;
-    }
 } 
 @media (max-width: 350px) {
     .navbar a {
@@ -223,7 +212,7 @@ a.bookBtn:hover {
     line-height: 50vw;
 
 }
-.slidePic {
+.slidePic, .slidePicSm {
     display: none;
     width: 100%;
 }
@@ -356,6 +345,9 @@ table {
   max-width: 470px;
   margin: 0 auto;
   text-align: justify;
+}
+.service-desc:last-child {
+    padding-bottom: 0;
 }
 .price {
   font-weight: 500;
@@ -541,6 +533,12 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 @media (max-width: 625px) {
     .chef-table td {
         padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .slider {
+        height: calc(50vw - 12px);
     }
 }
 
