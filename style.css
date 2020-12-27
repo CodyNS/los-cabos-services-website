@@ -6,8 +6,9 @@ html {
     background: #eae7d9;
     font-family: 'Quicksand', sans-serif;
 }
-a:visited {
-  color:rgba(0, 0, 0, 0.5)
+a, a:visited {
+  color: #000;
+
 }
 
 
@@ -57,7 +58,7 @@ a.bookBtn {
   color: white;
 }
 a.bookBtn:hover {
-  background: #272727;
+  background: rgba(0, 0, 0, 0.72);
 }
 .dropdown {
     float: left;
@@ -131,7 +132,7 @@ a.bookBtn:hover {
     padding-bottom: 20px;
 }
 .topbar a.hambBtn:hover {
-    background: #272727;
+    background: rgba(0, 0, 0, 0.72);
 }
 .topbar a.hambBtn:hover i {
     color: white;
@@ -224,11 +225,11 @@ a.bookBtn:hover {
     100%{opacity:1}
 }
 .anifadeNanny {
-  animation: fading 7s infinite
+    animation: fading 7s infinite
 }@keyframes fading {
-  0%{opacity:0}
-  33%{opacity:1}
-  100%{opacity:1}
+    0%{opacity:0}
+    33%{opacity:1}
+    100%{opacity:1}
 }
 
 
@@ -239,16 +240,19 @@ a.bookBtn:hover {
     min-height: calc((100vh - 50vw) - 90px);
 }
 .main-nanny b {
-  font-weight: 600;
+    font-weight: 600;
 }
 .main-about a:hover {
-  font-weight: bold;
+    font-weight: bold;
 }
 .section {
     padding: 40px max(30px, calc(50% - 400px));
 }
 .section:nth-child(even) {
     background: rgba(0,0,0,0.05);
+}
+.section:last-child {
+    padding-bottom: 60px;
 }
 .title {
     color: rgb(44, 33, 33);
@@ -283,13 +287,13 @@ table {
     text-align: left;
 }
 .flexy {
-  display: flex;
+    display: flex;
 }
 .f1 {
-  flex: 1;
+    flex: 1;
 }
 .specials h3{
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 .specials img {
     max-width: 100%;
@@ -593,6 +597,9 @@ input[type="submit"].fcf-btn-block{
     .mainPageContactUsHeading {
         margin-bottom: 55px;
     }
+    .section.contactUs {
+      padding-top: 35px;
+    }
     .homePageContactUs .fcf-body {
         padding: 0;
     }
@@ -615,9 +622,13 @@ input[type="submit"].fcf-btn-block{
         margin-top: 15px; 
         border-radius: 0;
     }
+    .section.contactUs {
+      padding-bottom: 0;
+    }
     .section.contactUs .fcf-body {
         margin: -15px -20px 0;
         border-radius: 0;
+        padding-bottom: 60px;
     }
 }
 
