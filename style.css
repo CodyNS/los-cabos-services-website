@@ -31,10 +31,10 @@ a, a:visited {
     line-height: 50px;
     width: 100%;
     min-width: 265px;
+    background: rgba(0, 0, 0, 0.07);
 }
 .top-branding.splitkey {
     float: left;
-    background: rgba(0, 0, 0, 0.07);
     padding-left: 30px;
     padding-right: 30px;
     font-weight: 600;
@@ -206,6 +206,13 @@ a.bookBtn:hover {
   }
   .top-branding {
       background: transparent;
+  }
+}
+
+/* delete after picking a logo */
+@media (max-width: 425px) {
+  .top-branding.xxx {
+      padding-right: 10px;
   }
 }
 
