@@ -27,23 +27,10 @@ a, a:visited {
     height: 21.5px;
 }
 .topbar.splitkey {
-    height: 50px;
-    line-height: 50px;
-    width: 100%;
-    min-width: 265px;
     background: rgba(0, 0, 0, 0.07);
 }
-.top-branding.splitkey {
-    float: left;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-weight: 600;
-}
-.topbar.splitkey img {
-    float: left;
-    height: 36px;
+.top-branding.splitkey img {
     margin: 0 0 0 -2px;
-    padding: 7px 0;
 }
 
 
@@ -61,11 +48,15 @@ a, a:visited {
     padding-right: 30px;
     font-weight: 600;
 }
-.topbar img {
+.top-branding img {
     float: left;
     height: 36px;
     margin: 0 12px 0 -5px; /* was -10 for left */
     padding: 7px 0;
+}
+.top-branding:hover img {
+  -webkit-filter: invert(1); 
+  filter: invert(1);
 }
 a .top-branding {
     text-decoration: none;
