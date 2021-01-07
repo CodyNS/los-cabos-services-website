@@ -5,6 +5,18 @@
 </div>
 </a> */
 
+
+
+/* can probably delete this */
+.main-about a:hover {
+  font-weight: bold;
+}
+
+
+
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -16,6 +28,9 @@ html {
 a, a:visited {
   color: #000;
 
+}
+.cent {
+  text-align: center;
 }
 
 .brandtext.splitkey {
@@ -270,16 +285,16 @@ a.bookBtn:hover {
 
 
 
-.main, .main-nanny {
+.main, .main.nanny {
     text-align: center;
     position: relative;
     min-height: calc((100vh - 50vw) - 90px);
 }
-.main-nanny b {
+.main.nanny b {
     font-weight: 600;
 }
-.main-about a:hover {
-    font-weight: bold;
+.main-blurb {
+  margin: 0 auto;
 }
 .section {
     padding: 40px max(30px, calc(50% - 400px));
@@ -420,9 +435,33 @@ table {
     background: rgba(0,0,0,0.06);
     margin: 0 auto 30px; 
 }
+.section.grocPrestock ul {
+  margin: 10px 0 30px 25px; 
+  list-style-type: none;
+}
+.section.grocPrestock li {
+  font-size: 0.95em;
+}
+.main-blurb.waitBartBut {
+  margin: 15px auto 0;
+  max-width: 620px;
 
-
-
+  text-align: justify;
+}
+.section.waitBart, .section.butler {
+  padding: 40px max(30px, calc(50% - 310px));
+  text-align: left;
+}
+.section.butler ul {
+  margin: 0 0 30px 30px;
+}
+.section.butler li {
+  margin-bottom: 12px;
+}
+.section.waiterBartenderPricing {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 
 
 /* contact form */
