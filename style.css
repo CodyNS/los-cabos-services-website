@@ -41,6 +41,7 @@ a, a:visited {
     font-weight: 600;
     height: 50px;
     line-height: 50px;
+    /* overflow: hidden; */
     width: 100%;
     min-width: 265px;
 }
@@ -94,6 +95,7 @@ a.bookBtn:hover {
 .dropdown {
     float: left;
     overflow: hidden;
+    height: 50px;
 }
 .dropdown .dropbtn {
     font-weight: 600;
@@ -118,6 +120,7 @@ a.bookBtn:hover {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 2;
+    top: 50px; /* shouldn't have to put this but it's a hacky fix for the 1px gap at top that appears when running on actual servers */
 }
 .dropdown-content a {
     float: none;
@@ -284,6 +287,9 @@ a.bookBtn:hover {
 .main-blurb {
   margin: 0 auto;
 }
+.main-blurb.home {
+  max-width: 700px;
+}
 .section {
     padding: 40px max(30px, calc(50% - 400px));
 }
@@ -409,6 +415,7 @@ table {
 }
 .service a {
     text-decoration: none;
+    font-size: 1.1em;
     color: #000;
 }
 .box {
@@ -452,6 +459,66 @@ table {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+.homePageContactUs .explainer {
+  margin-bottom: 50px;
+}
+
+
+
+
+/* --------- FAQ accordion ---------- */
+.qAccordion {
+  background: rgba(0,0,0,0.09);
+  color: #222;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s;
+  border-top: 1px solid rgb(255, 255, 255);
+}
+.qAccordion:first-child {
+  border-top: 0;
+  border-radius: 10px 10px 0 0;
+}
+.qAccordion:nth-child(5) { /* seems to count the answerPanels as children too */
+  border-radius: 0 0 10px 10px;
+}
+.active, .qAccordion:hover {
+  background: rgba(107, 167, 163, 0.904);
+  color: white;
+  font-weight: bold;
+}
+.answerPanel {
+  display: none;
+  background: #f0f3ed;
+  overflow: hidden;
+  padding: 30px 20px;
+}
+.answerPanel:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+@media (max-width: 450px) {
+  .qAccordion {
+    border-radius: 0 !important;
+  }
+  .answerPanel:last-child {
+    border-radius: 0;
+  }
+  .faq .section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .answerPanel {
+    padding: 20px 20px;
+  }
+}
+
+
 
 
 /* contact form */
@@ -589,7 +656,7 @@ input[type="submit"].fcf-btn-block{
     color: white;
 }
 .footer::after {
-    content: "\00A9  Cabo Concierge, 2020";
+    content: "\00A9  Cabo Concierge, 2021";
 }
 
 
@@ -646,15 +713,16 @@ input[type="submit"].fcf-btn-block{
         margin-right: -20px;
     }
     .mainPageContactUsHeading {
-        margin-bottom: 55px;
+        margin-bottom: 25px;
     }
     .section.contactUs {
         padding-top: 35px;
     }
     .homePageContactUs .fcf-body {
         padding: 0;
+        padding-top: 25px;
     }
-} 
+}
 
 @media (max-width: 440px) {
     .massageTreatmentMenu td {
@@ -721,9 +789,6 @@ input[type="submit"].fcf-btn-block{
 }
 
 @media (max-width: 330px) {
-    .mainPageContactUsHeading {
-        margin-bottom: 60px;
-    }
     .chef-table th:first-child, .chef-table td:first-child{
         padding-right: 10px;
       }
@@ -733,61 +798,4 @@ input[type="submit"].fcf-btn-block{
     .chef-table th, .chef-table td{
         padding-right: 6px;
       }
-}
-
-
-
-
-
-
-
-.qAccordion {
-  background: rgba(0,0,0,0.09);
-  color: #222;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.3s;
-  border-top: 1px solid rgb(255, 255, 255);
-}
-.qAccordion:first-child {
-  border-top: 0;
-  border-radius: 10px 10px 0 0;
-}
-.qAccordion:nth-child(5) { /* seems to count the answerPanels as children too */
-  border-radius: 0 0 10px 10px;
-}
-.active, .qAccordion:hover {
-  background: rgba(107, 167, 163, 0.904);
-  color: white;
-  font-weight: bold;
-}
-.answerPanel {
-  display: none;
-  background: #f0f3ed;
-  overflow: hidden;
-  padding: 30px 20px;
-}
-.answerPanel:last-child {
-  border-radius: 0 0 10px 10px;
-}
-
-@media (max-width: 450px) {
-  .qAccordion {
-    border-radius: 0 !important;
-  }
-  .answerPanel:last-child {
-    border-radius: 0;
-  }
-  .faq .section {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .answerPanel {
-    padding: 20px 20px;
-  }
 }
