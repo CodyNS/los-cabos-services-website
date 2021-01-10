@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css?v=2"/>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -23,15 +23,20 @@
   <link rel="prefetch" href="/pics/grocery/0.jpg" as="image" type="image/jpg" media="(min-width: 601px)">
   <link rel="prefetch" href="/pics/waitbartbut/0.jpg" as="image" type="image/jpg" media="(min-width: 601px)">
 
+  <meta http-equiv="Cache-Control" content="private, no-cache, no-store, must-revalidate, max-age=0, proxy-revalidate, s-maxage=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Vary" content="*">
+
   <title>Cabo Concierge</title>
 </head>
-<body>
+<body onunload="">
 
   
-  <nav></nav>  <script>$(()=>$("nav").load("/nav.html"))</script>
+  <nav></nav>  <script>$(()=>$("nav").load("/nav.html?v=2"))</script>
 
 
-  <div class="slider">
+  <div id="slider">
     <img class="slidePic anifade" src="pics/home/0.jpg">
     <img class="slidePic anifade" src="pics/home/1.jpg">
     <img class="slidePic anifade" src="pics/home/2.jpg">
@@ -48,6 +53,9 @@
     <img class="slidePicSm anifade" src="pics/home/5s.jpg">
     <img class="slidePicSm anifade" src="pics/home/6s.jpg">
   </div>
+  <script>
+    document.querySelector('#slider').style.backgroundImage = window.innerWidth > 600 ? "url('/pics/home/0.jpg')" : "url('/pics/home/0s.jpg')";
+  </script>
 
 
   <div class="main">
@@ -56,7 +64,7 @@
       <div class="title">Cabo Concierge</div>
       <div class="main-blurb home">
         We are an Agency specializing in traveling in San José del Cabo Baja California Sur, Mexico,
-        from professional private chef, grocery delivery, waiter, bartender, butler, and spa services to yoga classes, and nanny services.
+        from professional private chef, grocery delivery, waiter, bartender, butler and spa services to yoga classes and nanny services.
       </div>
     </div>
 
@@ -64,12 +72,12 @@
     <div class="section mainPageServicesOffered">
       <div class="sub-head">Services Offered</div>
       <div class="services">
-        <div class="service"><a href="/private-chef">Private Chef<div class="box"><img src="/pics/home/service-squares/private-chef.jpg" /></div></a></div>
-        <div class="service"><a href="/grocery-delivery">Grocery Delivery<div class="box"><img src="/pics/home/service-squares/grocery-delivery.jpg" /></div></a></div>
-        <div class="service"><a href="/waiter-bartender-butler/">Waiter/Butler<div class="box"><img src="/pics/home/service-squares/bartender.jpg" /></div></a></div>
-        <div class="service"><a href="/massage">Massage / Spa<div class="box"><img src="/pics/home/service-squares/massage.jpg" /></div></a></div>
-        <div class="service"><a href="/yoga">Yoga<div class="box"><img src="/pics/home/service-squares/yoga.jpg" /></div></a></div>
-        <div class="service"><a href="/nanny">Nanny<div class="box"><img src="/pics/home/service-squares/nanny.jpg" /></div></a></div>
+        <div class="service"><a href="/private-chef">Private Chef<div class="box"><img src="/pics/home/service-squares/private-chef.jpg?v=1" /></div></a></div>
+        <div class="service"><a href="/grocery-delivery">Grocery Delivery<div class="box"><img src="/pics/home/service-squares/grocery-delivery.jpg?v=1" /></div></a></div>
+        <div class="service"><a href="/waiter-bartender-butler/">Waiter/Butler<div class="box"><img src="/pics/home/service-squares/bartender.jpg?v=1" /></div></a></div>
+        <div class="service"><a href="/massage">Massage / Spa<div class="box"><img src="/pics/home/service-squares/massage.jpg?v=1" /></div></a></div>
+        <div class="service"><a href="/yoga">Yoga<div class="box"><img src="/pics/home/service-squares/yoga.jpg?v=1" /></div></a></div>
+        <div class="service"><a href="/nanny">Nanny<div class="box"><img src="/pics/home/service-squares/nanny.jpg?v=1" /></div></a></div>
       </div>
     </div>
 
@@ -121,7 +129,7 @@
   <div class="footer"></div>
   
   <script src="/global.js"></script>
-  <script src="/picSlider.js" data-page="home"></script>
+  <script src="/picSlider.js?v=1" data-page="home"></script>
   
 </body>
 </html>

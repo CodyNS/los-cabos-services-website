@@ -3,25 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/style.css"/>
+  <link rel="stylesheet" href="/style.css?v=2"/>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <meta http-equiv="Cache-Control" content="private, no-cache, no-store, must-revalidate, max-age=0, proxy-revalidate, s-maxage=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Vary" content="*">
+
   <title>Nanny Service - Cabo Concierge</title>
 </head>
-<body>
+<body onunload="">
 
-  <nav></nav>  <script>$(()=>$("nav").load("/nav.html"))</script>
+  <nav></nav>  <script>$(()=>$("nav").load("/nav.html?v=2"))</script>
 
-  <div class="slider">
-    <!-- <div class="slider-overlay">(nanny-specific photos here)</div> -->
+  <div id="slider">
     <img class="slidePic anifadeNanny" src="/pics/nanny/0.jpg">
     <img class="slidePic anifadeNanny" src="/pics/nanny/1.jpg">
 
     <img class="slidePicSm anifadeNanny" src="/pics/nanny/0s.jpg">
     <img class="slidePicSm anifadeNanny" src="/pics/nanny/1s.jpg">
   </div>
+  <script>
+    document.querySelector('#slider').style.backgroundImage = window.innerWidth > 600 ? "url('/pics/nanny/0.jpg')" : "url('/pics/nanny/0s.jpg')";
+  </script>
 
 
   <div class="main nanny">
@@ -57,7 +65,7 @@
   <div class="footer"></div>
   
   <script src="/global.js"></script>
-  <script src="/picSlider.js" data-page="nanny"></script>
+  <script src="/picSlider.js?v=1" data-page="nanny"></script>
   
 </body>
 </html>
