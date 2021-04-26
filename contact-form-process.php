@@ -2,8 +2,8 @@
 if (isset($_POST['Email'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "contact@codyns.com";
-    $email_subject = "contact form submission from Cabo Concierge website";
+    $email_to = "info@cabomassage.com.mx";
+    $email_subject = "contact form submission from cabomassage.com.mx";
 
     function problem($error)
     {
@@ -48,7 +48,7 @@ if (isset($_POST['Email'])) {
         problem($error_message);
     }
 
-    $email_message = "Form details below.\n\n";
+    $email_message = "(someone submitted this from the contact form on your website: )\n\n";
 
     function clean_string($string)
     {
@@ -56,9 +56,9 @@ if (isset($_POST['Email'])) {
         return str_replace($bad, "", $string);
     }
 
-    $email_message .= "Name: " . clean_string($name) . "\n";
-    $email_message .= "Email: " . clean_string($email) . "\n";
-    $email_message .= "Message: " . clean_string($message) . "\n";
+    $email_message .= "Name:   " . clean_string($name) . "\n";
+    $email_message .= "Email:   " . clean_string($email) . "\n";
+    $email_message .= "\nMessage:   " . clean_string($message) . "\n";
 
     // create email headers
     $headers = 'From: ' . $email . "\r\n" .

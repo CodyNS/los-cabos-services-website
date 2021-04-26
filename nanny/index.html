@@ -20,16 +20,8 @@
 
   <nav></nav>  <script>$(()=>$("nav").load("/nav.html?v=2"))</script>
 
-  <div id="slider">
-    <img class="slidePic anifadeNanny" src="/pics/nanny/0.jpg">
-    <img class="slidePic anifadeNanny" src="/pics/nanny/1.jpg">
-
-    <img class="slidePicSm anifadeNanny" src="/pics/nanny/0s.jpg">
-    <img class="slidePicSm anifadeNanny" src="/pics/nanny/1s.jpg">
-  </div>
-  <script>
-    document.querySelector('#slider').style.backgroundImage = window.innerWidth > 600 ? "url('/pics/nanny/0.jpg')" : "url('/pics/nanny/0s.jpg')";
-  </script>
+  <div id="slider"></div>
+  <script>document.querySelector('#slider').style.backgroundImage = window.innerWidth > 600 ? "url('/pics/nanny/0.jpg')" : "url('/pics/nanny/0s.jpg')"</script>
 
 
   <div class="main nanny">

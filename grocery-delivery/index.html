@@ -22,24 +22,8 @@
   <nav></nav>  <script>$(()=>$("nav").load("/nav.html?v=2"))</script>
 
 
-  <div id="slider">
-    <img class="slidePic anifade" src="/pics/grocery/0.jpg">
-    <img class="slidePic anifade" src="/pics/grocery/1.jpg">
-    <img class="slidePic anifade" src="/pics/grocery/2.jpg">
-    <img class="slidePic anifade" src="/pics/grocery/3.jpg">
-    <img class="slidePic anifade" src="/pics/grocery/4.jpg">
-    <img class="slidePic anifade" src="/pics/grocery/5.jpg">
-
-    <img class="slidePicSm anifade" src="/pics/grocery/0s.jpg">
-    <img class="slidePicSm anifade" src="/pics/grocery/1s.jpg">
-    <img class="slidePicSm anifade" src="/pics/grocery/2s.jpg">
-    <img class="slidePicSm anifade" src="/pics/grocery/3s.jpg">
-    <img class="slidePicSm anifade" src="/pics/grocery/4s.jpg">
-    <img class="slidePicSm anifade" src="/pics/grocery/5s.jpg">
-  </div>
-  <script>
-    document.querySelector('#slider').style.backgroundImage = window.innerWidth > 600 ? "url('/pics/grocery/0.jpg')" : "url('/pics/grocery/0s.jpg')";
-  </script>
+  <div id="slider"></div>
+  <script>document.querySelector('#slider').style.backgroundImage = window.innerWidth > 600 ? "url('/pics/grocery/0.jpg')" : "url('/pics/grocery/0s.jpg')"</script>
 
 
   <div class="main">
